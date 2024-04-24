@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+
+    scroll-behavior: smooth;
+
+    font-family: 'Manrope', sans-serif;
+
+    transition: all .3s ease-in;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #1D4221;
+    background: linear-gradient(0deg, #1D4221 0%, #1CDD71 100%);
+}
+
+#loader.none{
+    display: none;
+}
+
+#loader{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 100;
+    background-color: #000;
+}
+
+#loader i{
+    font-size: 30pt;
+}
+
+.atalhos .none{
+    display: none;
+}
+
+.atalhos ul {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    align-items: start;
+
+    padding: 20px;
+}
+
+.atalhos {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    align-items: start;
+
+    position: fixed;
+
+    padding: 12px 15px;
+
+    border-radius: 50px 50px 25px 50px;
+
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+
+    color: #fff;
+    background-color: #1D4221;
+}
+
+.atalhos button{
+    margin: 10px 20px;
+
+    color: #fff;
+    background-color: #1D4221;
+}
+
+div.backCircle {
+    display: flex;
+
+    position: absolute;
+    z-index: -1;
+
+    width: 321px;
+    height: 321px;
+
+    border-radius: 321px;
+    background: rgba(29, 66, 33, 0.80);
+
+    filter: blur(200px);
+}
+
+div.backCircle.one {
+    align-self: flex-end;
+    justify-self: start;
+
+    margin-top: -150vh;
+}
+
+div.backCircle.two {
+    align-self: flex-start;
+    justify-self: start;
+}
+
+div.backCircle.thr {
+    align-self: flex-end;
+    justify-self: end;
+
+    margin-top: 150vh;
+}
+
+body {
+    color: #fff;
+    background-color: #000;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-x: hidden;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 17px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100vw;
+    height: 150px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 40px;
+}
+
+nav a {
+    color: #fff;
+    font-weight: 500;
+}
+
+nav a.btn {
+    padding: 10px 40px;
+
+    font-weight: 800;
+
+    border-radius: 10px;
+    border: 1px solid #1D4221;
+}
+
+div.header h1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+div.header img {
+    margin-top: -70px;
+
+    width: 45vw;
+}
+
+div.main {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    position: relative;
+    z-index: -1;
+
+    margin: 50px;
+
+    min-height: 80vh;
+}
+
+div.main img:nth-child(1) {
+    margin-top: 200px;
+    margin-left: -30vw;
+
+    position: absolute;
+}
+
+div.main img:nth-child(2) {
+    margin-top: -200px;
+    margin-left: -38vw;
+
+    position: absolute;
+    transform: scale(1.2) rotate(10deg);
+}
+
+div.main img:nth-child(3) {
+    margin-top: -50px;
+    margin-left: -15vw;
+
+    position: absolute;
+    transform: scale(1.2) rotate(-10deg);
+}
+
+div.main img:nth-child(4) {
+    margin-top: 100px;
+    margin-left: 20vw;
+
+    position: absolute;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    gap: 100px;
+}
+
+footer .input{
+    transform: scale(1.1);
+}
+
+footer .input input {
+    display: inline-flex;
+    height: 43px;
+    padding: 14px 115px 14px 45px;
+    align-items: center;
+
+    border-radius: 64px 2px 2px 64px;
+    background: #E7E7E7;
+}
+
+footer .input button {
+    margin-left: -5px;
+
+    width: 102px;
+    padding: 13px 21px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    font-weight: 700;
+    color: #fff;
+
+    border-radius: 0px 64px 64px 0px;
+    background: #1D4221;
+}
